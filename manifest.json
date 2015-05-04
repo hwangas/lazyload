@@ -4,7 +4,7 @@
     "name": "lazy loading for chrome",
     "description": "Load only the active tab and save 15% on car insurance",
     "version": "1.0",
-    "author": "Anna Hwang",
+    "author": "Anna Hwang (github: hwangas)",
 
     "browser_action": {
         "default_icon": "icon.png",

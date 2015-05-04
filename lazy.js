@@ -31,7 +31,9 @@ chrome.tabs.onActivated.addListener(function(activeInfo) {
         //unfortunately if you don't refresh then the user has to wait a bit for
         //the page to naturally refresh itself due to incoming requests
         //(length of wait depends on when the next request naturally comes in)
-        //chrome.tabs.reload(activeInfo.tabId);
+        //OR MAYBE ITS NOT AN ISSUE
+        //???
+        chrome.tabs.reload(activeInfo.tabId);
     }
 });
 
