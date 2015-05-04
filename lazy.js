@@ -7,12 +7,15 @@
 
 // the object of active tabs
 var activeTabs = {};
+var empty = true;
 
-while 
 // add the current selected tab
 chrome.tabs.query( {active: true, currentWindow: true}, function(tab) {
-    activeTabs[tab.id] = 1;
-    chrome.tabs.reload(activeInfo.tabId);
+    if(empty == true) {
+        activeTabs[tab.id] = 1;
+        chrome.tabs.reload(activeInfo.tabId);
+        empty = false;
+    }
 });
 
 // body check every webrequest make sure they're authorized
