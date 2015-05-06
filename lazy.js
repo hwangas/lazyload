@@ -3,6 +3,8 @@
  * @descrip A Chrome browser extension created to enable "lazy tab loading".
  *          Tabs will not load on startup unless they are the active tab.
  *          Makes bootup a bit faster and Chrome take up less memory.
+ * @etc     Tested in Google Chrome 42.0.2311.135 (64-bit) and
+ *          Google Chrome OS 42.0.2311.134 (64-bit)
  */
 
 //console.log("LAZYTABS");
