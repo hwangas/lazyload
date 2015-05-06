@@ -23,8 +23,6 @@
  *          Google Chrome OS 42.0.2311.134 (64-bit)
  */
 
-//console.log("LAZYTABS");
-
 // the object of active tabs
 var activeTabs = {};
 
@@ -55,4 +53,9 @@ chrome.tabs.onActivated.addListener(function(activeInfo) {
 // remove any tab from activeTabs that is closed
 chrome.tabs.onRemoved.addListener(function(tabId, removeInfo) {
     delete activeTabs[tabId];
+});
+
+// add any tab that is created
+chrome.tabs.onCreated.addListener(function(tab) {
+    activeTabs[tab.tabId] = 1;
 });
