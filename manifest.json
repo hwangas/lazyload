@@ -1,17 +1,10 @@
 {
     "manifest_version": 2,
 
-    "name": "",
+    "name": "Laziest Load",
     "description": "Load only the active tab when booting up an old session of Chrome",
     "version": "1.0",
     "author": "Anna Hwang",
-
-    /*
-    "browser_action": {
-        "default_icon": "icon.png",
-        "default_title": "Lazyload"
-    },
-    */
 
     "background": {
         "persistent": true,
